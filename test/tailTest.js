@@ -20,7 +20,7 @@ describe("#tail", () => {
     });
   });
 
-  describe("Test Case 2: Check the original array is not mutated)", () => {
+  describe("Test Case 2: Check that the original array is not mutated", () => {
 
     const originalArr =  ["Hello", "Lighthouse", "Labs"];
     const result = tail(originalArr);
@@ -36,7 +36,7 @@ describe("#tail", () => {
     });
   });
 
-  describe("Test Case 3: An array with one element should return an empty array/undefined)", () => {
+  describe("Test Case 3: An array with one element should return an empty array", () => {
 
     const oneElementArr =  tail(["Goodbye World"]);
     it("an array of one element yields an empty array for its tail", () => {

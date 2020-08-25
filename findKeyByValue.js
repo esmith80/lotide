@@ -4,3 +4,5 @@ const findKeyByValue = function(obj, passedValue) {
     if (passedValue === Object.values(obj)[i]) return Object.keys(obj)[i];
   }
 };
+
+module.exports = findKeyByValue;

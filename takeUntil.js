@@ -1,4 +1,3 @@
-
 const takeUntil = function(array, callback) {
   const slicedArr = [];
   for (let item of array) {
