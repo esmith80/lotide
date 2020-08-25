@@ -26,11 +26,8 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head()`: description
 
-* `tail()`: description
 
-* `middle()`: description
 
 * `assertArraysEqual(array1, array2)`: description
 
@@ -38,20 +35,32 @@ The following functions are currently implemented:
 
 * `assertObjectsEqual(actual, expected)`: description
 
-* `countOnly(allItems, itemsToCount)`: description
+* `countLetters(str)`: description
+
+* `countOnly(allItems, itemsToCount)`: takes in 2 arguments: 1) an array `allItems` (strings only) and 2) an object `itemsToCount` which tracks counts for a specific subset of those items (object format is key:value pair where key is string to search for and value is true
 
 * `eqArrays(array1, array2)`: description
-
 * `eqObjects(obj1, obj2)`: description
-
 * `findKey()`: description
 
-* `findKeyByValue()`: description
+* `findKeyByValue(obj, string)`: takes 1) object and 2) string - returns a key if the string is found (exact match) in that object, undefined if not found
+
+* `head(array)`: description
+
+* `letterPositions(string)`: takes in 1 argument `string` and returns an object with counts for the occurence of each letter in that string
 
 * `map()`: description
-
+* `middle()`: description
+* `tail()`: description
 * `takeUntil()`: description
-
 * `without()`: description
+
+
+
+
+
+
+
+
 
 
