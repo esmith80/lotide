@@ -1,22 +1,3 @@
-const eqArrays = function(array1, array2) {
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) return false;
-    }
-  } else {
-    return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log("✅ Passed: " + JSON.stringify(array1) + " is equal to " + JSON.stringify(array2));
-  } else {
-    console.log("🛑 Failed: " + JSON.stringify(array1) + " is NOT equal to " + JSON.stringify(array2));
-  }
-};
-
 const letterPositions = function(str) {
   // return all indicies in the string where each character is found
   // convert to lowercase so captials/lowercase are counted twice;
@@ -37,9 +18,5 @@ const letterPositions = function(str) {
   }
   return letterPositionReport;
 };
-// print out and tests
-let testString = "hello world";
-console.table(letterPositions(testString));
-assertArraysEqual(letterPositions(testString).e, [1]);
-assertArraysEqual(letterPositions(testString).l, [2,3,9]);
-assertArraysEqual(letterPositions(testString).o, [4,7]);
+
+module.exports = letterPositions;
